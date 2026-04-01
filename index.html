@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ji-Young Lee | International Professional Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Lora', 'serif'],
+                        newspaper: ['Times New Roman', 'Times', 'serif']
+                    },
+                    colors: {
+                        primary: '#1a365d',
+                        secondary: '#718096',
+                        accent: '#c5a47e',
+                        light: '#f7fafc',
+                        paper: '#fdfbf7',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body { font-family: 'Montserrat', sans-serif; }
+        h1, h2, h3, h4, .serif-text { font-family: 'Lora', serif; }
+        
+        /* Custom Newspaper/Scrapbook styling */
+        .news-clip {
+            background-color: #fdfbf7;
+            background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 100 100' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noise'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100' height='100' filter='url(%23noise)' opacity='0.05'/%3E%3C/svg%3E");
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06), inset 0 0 20px rgba(0,0,0,0.02);
+            border: 1px solid #e2e8f0;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .news-clip:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        .news-headline {
+            font-family: 'Times New Roman', Times, serif;
+            letter-spacing: -0.5px;
+            border-bottom: 2px solid #2d3748;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1rem;
+        }
+        .news-meta {
+            font-family: 'Montserrat', sans-serif;
+            text-transform: uppercase;
+            font-size: 0.75rem;
+            letter-spacing: 1px;
+            color: #4a5568;
+        }
+        .hero-overlay {
+            background: linear-gradient(to right, rgba(26, 54, 93, 0.9), rgba(26, 54, 93, 0.7));
+        }
+    </style>
+</head>
+<body class="bg-light text-gray-800 antialiased leading-relaxed">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur shadow-sm transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20">
+                <div class="flex items-center">
+                    <span class="text-2xl font-bold text-primary serif-text">Ji-Young Lee</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#about" class="text-sm font-medium text-gray-600 hover:text-accent transition">About</a>
+                    <a href="#competencies" class="text-sm font-medium text-gray-600 hover:text-accent transition">Expertise</a>
+                    <a href="#leadership" class="text-sm font-medium text-gray-600 hover:text-accent transition">Leadership</a>
+                    <a href="#artistry" class="text-sm font-medium text-gray-600 hover:text-accent transition">Artistry</a>
+                    <a href="#press" class="text-sm font-medium text-gray-600 hover:text-accent transition">Press & Media</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative h-screen flex items-center justify-center bg-gray-900 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1543857778-c4a1a3e0b2eb?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80');">
+        <div class="absolute inset-0 hero-overlay"></div>
+        <div class="relative z-10 text-center px-4 max-w-4xl mx-auto mt-16">
+            <span class="block text-accent font-semibold tracking-widest uppercase mb-4 text-sm md:text-base">Ministry, Artistry, & Academic Leadership</span>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl text-white font-bold mb-6 leading-tight">Rev. Ji-Young Lee</h1>
+            <p class="text-lg md:text-xl text-gray-200 mb-10 font-light max-w-2xl mx-auto">
+                Pioneering the intersection of psychodrama, global missional leadership, and theological expression.
+            </p>
+            <a href="#about" class="inline-block border-2 border-accent text-accent hover:bg-accent hover:text-white transition-colors duration-300 px-8 py-3 rounded-full uppercase tracking-wider text-sm font-semibold">
+                Explore Portfolio
+            </a>
+        </div>
+    </section>
+
+    <!-- Executive Summary -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                
+                <!-- 갤러리 액자형 프로필 사진 컨테이너 -->
+                <div class="w-full">
+                    <div class="w-full aspect-[4/5] lg:aspect-[3/4] bg-[#111111] rounded-xl shadow-2xl relative overflow-hidden group flex items-center justify-center">
+                        <img 
+                            src="profile.jpg" 
+                            alt="Rev. Ji-Young Lee Performance" 
+                            class="w-full h-full object-contain object-center opacity-95 transition-opacity duration-300 group-hover:opacity-100"
+                            onerror="this.outerHTML='<div class=\'flex flex-col items-center justify-center text-gray-500\'><i class=\'fas fa-portrait text-6xl mb-4\'></i><span class=\'text-sm\'>profile.jpg</span></div>'"
+                        >
+                    </div>
+                    <p class="text-center text-xs text-gray-400 mt-3 italic">Monodrama Performance Portrait</p>
+                </div>
+                
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-primary mb-6">The Intersection of Faith and Performance</h2>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                        Ji-Young Lee is a distinguished pioneer in psychodrama and a preeminent global missional leader whose work redefines the boundaries of theological expression. Her professional identity represents a rare synthesis of high-level academic rigor and transformative performance artistry.
+                    </p>
+                    <p class="text-gray-600 mb-6 text-lg leading-relaxed">
+                        As a Professor of Worship Studies and an internationally acclaimed Monodramatist, Lee strategically utilizes performance art as a scalable medium for social advocacy and spiritual outreach. By dramatizing the complexities of human existence, she bridges the gap between abstract theological discourse and the visceral realities of psychological distress.
+                    </p>
+                    <div class="border-l-4 border-accent pl-6 py-2 mt-8">
+                        <p class="text-xl italic text-gray-700 serif-text">
+                            "A vital asset in global efforts to support the marginalized, establishing a new paradigm for 'performing the Word'."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Competencies -->
+    <section id="competencies" class="py-20 bg-light">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-primary mb-4">Core Competencies</h2>
+                <div class="w-24 h-1 bg-accent mx-auto"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Competency 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-blue-50 text-primary rounded-full flex items-center justify-center text-2xl mb-6 mx-auto">
+                        <i class="fas fa-theater-masks"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4 serif-text text-primary">Performing Arts & Psychodrama</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start"><i class="fas fa-check text-accent mt-1 mr-3"></i> Monodrama & Mime Performance</li>
+                        <li class="flex items-start"><i class="fas fa-check text-accent mt-1 mr-3"></i> Expression Arts Therapy (Levels 1 & 3)</li>
+                        <li class="flex items-start"><i class="fas fa-check text-accent mt-1 mr-3"></i> Psychodrama Direction & Production</li>
+                        <li class="flex items-start"><i class="fas fa-check text-accent mt-1 mr-3"></i> Specialized Ballet & Modern Dance</li>
+                    </ul>
+                </div>
+
+                <!-- Competency 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-blue-50 text-primary rounded-full flex items-center justify-center text-2xl mb-6 mx-auto">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4 serif-text text-primary">Academic & Theological Leadership</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start"><i class="fas fa-check text-accent mt-1 mr-3"></i> Professor of Worship & Spirituality</li>
+                        <li class="flex items-start"><i class="fas fa-check text-accent mt-1 mr-3"></i> Mission & Culture Academic Research</li>
+                        <li class="flex items-start"><i class="fas fa-check text-accent mt-1 mr-3"></i> International Leadership Strategy</li>
+                        <li class="flex items-start"><i class="fas fa-check text-accent mt-1 mr-3"></i> Ecclesiastical Moderator & President</li>
+                    </ul>
+                </div>
+
+                <!-- Competency 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-sm hover:shadow-md transition">
+                    <div class="w-16 h-16 bg-blue-50 text-primary rounded-full flex items-center justify-center text-2xl mb-6 mx-auto">
+                        <i class="fas fa-globe-americas"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-center mb-4 serif-text text-primary">Global Social Advocacy</h3>
+                    <ul class="space-y-3 text-gray-600">
+                        <li class="flex items-start"><i class="fas fa-check text-accent mt-1 mr-3"></i> Pro-life Advocacy & Education</li>
+                        <li class="flex items-start"><i class="fas fa-check text-accent mt-1 mr-3"></i> Addiction Recovery (Psychodrama)</li>
+                        <li class="flex items-start"><i class="fas fa-check text-accent mt-1 mr-3"></i> Human Capital Development (GCCA)</li>
+                        <li class="flex items-start"><i class="fas fa-check text-accent mt-1 mr-3"></i> Cross-Cultural Mission Leadership</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Leadership & Academic Foundation -->
+    <section id="leadership" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16">
+                
+                <!-- Leadership Appointments -->
+                <div>
+                    <h2 class="text-3xl font-bold text-primary mb-8 flex items-center">
+                        <i class="fas fa-church text-accent mr-4"></i> Pastoral & Academic Leadership
+                    </h2>
+                    <div class="space-y-6">
+                        <div class="border-l-2 border-accent pl-6 py-2">
+                            <h4 class="text-xl font-bold text-gray-800">Moderator/President (노회장)</h4>
+                            <p class="text-gray-500 text-sm mb-2">Canada Chongshin Denomination, Korea Branch (2021)</p>
+                        </div>
+                        <div class="border-l-2 border-accent pl-6 py-2">
+                            <h4 class="text-xl font-bold text-gray-800">Professor of Worship Studies</h4>
+                            <p class="text-gray-500 text-sm mb-2">Korea Full Gospel Theological Seminary (2016-Present)</p>
+                        </div>
+                        <div class="border-l-2 border-accent pl-6 py-2">
+                            <h4 class="text-xl font-bold text-gray-800">Korea Representative</h4>
+                            <p class="text-gray-500 text-sm mb-2">Kingdomizer Mission Alliance (KMA) (2016-Present)</p>
+                        </div>
+                        <div class="border-l-2 border-accent pl-6 py-2">
+                            <h4 class="text-xl font-bold text-gray-800">Executive Pastor</h4>
+                            <p class="text-gray-500 text-sm mb-2">Global Citizen Family Community (GCCA) (2009-2013)</p>
+                            <p class="text-gray-600 text-sm mt-2">Transitioned from simple charity to human capital development. Managed welfare and academic consulting for over 50 international students, providing years of food supplies, medical support, and tuition.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Academic Foundation -->
+                <div>
+                    <h2 class="text-3xl font-bold text-primary mb-8 flex items-center">
+                        <i class="fas fa-university text-accent mr-4"></i> Academic Foundation
+                    </h2>
+                    <div class="bg-light rounded-xl p-8 border border-gray-100">
+                        <ul class="space-y-6">
+                            <li class="relative">
+                                <span class="absolute -left-10 top-1 w-4 h-4 rounded-full bg-accent border-4 border-white"></span>
+                                <h4 class="font-bold text-gray-800">Ph.D. Candidate (Mission and Culture)</h4>
+                                <p class="text-gray-500 text-sm">Westminster Graduate School of Theology (2020-Present)</p>
+                            </li>
+                            <li class="relative">
+                                <span class="absolute -left-10 top-1 w-4 h-4 rounded-full bg-gray-300 border-4 border-white"></span>
+                                <h4 class="font-bold text-gray-800">M.A. in International Leadership & Mission</h4>
+                                <p class="text-gray-500 text-sm">Chongshin University, Graduate School of Mission (2019)</p>
+                            </li>
+                            <li class="relative">
+                                <span class="absolute -left-10 top-1 w-4 h-4 rounded-full bg-gray-300 border-4 border-white"></span>
+                                <h4 class="font-bold text-gray-800">Master of Divinity (M.Div.)</h4>
+                                <p class="text-gray-500 text-sm">Faith Theological Seminary / Canada Christian College (2009-2011, 2008)</p>
+                            </li>
+                        </ul>
+
+                        <h3 class="text-lg font-bold text-primary mt-8 mb-4 border-b pb-2">Specialized International Training</h3>
+                        <p class="text-sm text-gray-600 mb-4">Elevating performance standards to a global professional level through elite training in Canada to benchmark excellence in theological performance:</p>
+                        <ul class="space-y-2 text-sm text-gray-600">
+                            <li><i class="fas fa-caret-right text-accent mr-2"></i> <strong>National Ballet of Canada:</strong> Professional dance training (2003)</li>
+                            <li><i class="fas fa-caret-right text-accent mr-2"></i> <strong>National Dance of Canada:</strong> Advanced movement studies (2003)</li>
+                            <li><i class="fas fa-caret-right text-accent mr-2"></i> <strong>George Brown College:</strong> Ballet certification (2003)</li>
+                            <li><i class="fas fa-caret-right text-accent mr-2"></i> <strong>Myongji University:</strong> Expression Arts Therapy (Lvl 1&3) & Pastoral Counseling</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Art of Monodrama & Social Advocacy -->
+    <section id="artistry" class="py-20 bg-primary text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold mb-4 serif-text">The Art of Monodrama</h2>
+                <p class="text-blue-200 max-w-2xl mx-auto">Social Advocacy and Human Dignity through Performance. Utilizing "The Monodrama" as a strategic tool to address acute pain and psychological distress.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Card 1 -->
+                <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/20 hover:bg-white/20 transition cursor-default">
+                    <div class="text-accent text-3xl mb-4"><i class="fas fa-child"></i></div>
+                    <h4 class="text-xl font-bold mb-2">Sanctity of Life</h4>
+                    <p class="text-sm text-gray-300">Pro-life Monodrama; portraying the trauma of abortion and the value of life through harrowing mime and auditory narrative (pulsating heart).</p>
+                </div>
+                <!-- Card 2 -->
+                <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/20 hover:bg-white/20 transition cursor-default">
+                    <div class="text-accent text-3xl mb-4"><i class="fas fa-dove"></i></div>
+                    <h4 class="text-xl font-bold mb-2">Restoration</h4>
+                    <p class="text-sm text-gray-300">"Joy" (환희); a signature physical piece focused on spiritual recovery, exaltation, and finding light in darkness.</p>
+                </div>
+                <!-- Card 3 -->
+                <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/20 hover:bg-white/20 transition cursor-default">
+                    <div class="text-accent text-3xl mb-4"><i class="fas fa-hands-helping"></i></div>
+                    <h4 class="text-xl font-bold mb-2">Addiction Recovery</h4>
+                    <p class="text-sm text-gray-300">"Alcoholic"; Psychodrama applied in clinical settings (Potters Mission, Psychiatric Wards) directly facilitating patient emotional recovery.</p>
+                </div>
+                <!-- Card 4 -->
+                <div class="bg-white/10 p-6 rounded-lg backdrop-blur-sm border border-white/20 hover:bg-white/20 transition cursor-default">
+                    <div class="text-accent text-3xl mb-4"><i class="fas fa-street-view"></i></div>
+                    <h4 class="text-xl font-bold mb-2">Marginalization</h4>
+                    <p class="text-sm text-gray-300">"Seoul Station" & "The Dignity"; addressing homelessness, isolation, and international adoption, proving body-language reaches the isolated.</p>
+                </div>
+            </div>
+
+            <!-- Global Reach List -->
+            <div class="mt-16 bg-white text-gray-800 p-8 rounded-xl shadow-xl">
+                <h3 class="text-2xl font-bold text-primary mb-6 text-center border-b pb-4">Chronological Performance Footprint</h3>
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div>
+                        <h4 class="font-bold text-accent mb-3 flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> The Canadian Circuit</h4>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li><strong>2002:</strong> Canada-Korea Cultural Exchange 10th Anniversary featured performer.</li>
+                            <li><strong>2003:</strong> KOSTA Canada Youth Conference; YWAM Toronto.</li>
+                            <li><strong>2004:</strong> Trinity Western Univ. (VIEW); Potters Mission Community benefit for homeless/addicts.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-accent mb-3 flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> International Missions</h4>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li><strong>2005 (Mongolia):</strong> Int. Univ. of Mongolia & Ulaanbaatar Univ.; Antioch/Khair churches.</li>
+                            <li><strong>Global Reach:</strong> India & Sri Lanka; "Great Love of God" initiative aiding the poor, sick, and disabled.</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="font-bold text-accent mb-3 flex items-center"><i class="fas fa-map-marker-alt mr-2"></i> Korean Academic Circuit</h4>
+                        <ul class="text-sm text-gray-600 space-y-2">
+                            <li><strong>1999-2002:</strong> "Alcoholic" clinical application at Yonsei Univ. Wonju Psychiatric Ward.</li>
+                            <li><strong>2004-2006:</strong> Handong Global Univ., Myongji Univ., Soongsil Univ.</li>
+                            <li><strong>2008:</strong> Single Mother Policy Forum.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Press & Media Archives (Scrapbook Design) -->
+    <section id="press" class="py-20 bg-[#f4f1ea] relative overflow-hidden">
+        <div class="absolute top-0 left-0 w-64 h-64 bg-accent opacity-5 rounded-full -translate-x-1/2 -translate-y-1/2"></div>
+        <div class="absolute bottom-0 right-0 w-96 h-96 bg-primary opacity-5 rounded-full translate-x-1/3 translate-y-1/3"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center mb-16">
+                <span class="text-accent font-semibold tracking-wider uppercase text-sm">Media Presence & Validation</span>
+                <h2 class="text-3xl md:text-5xl font-bold text-primary mt-2 mb-4 serif-text">Press & Media Archives</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Documented impact across major broadcasters and international newspapers validating Ji-Young Lee as a transformative global figure.</p>
+            </div>
+
+            <!-- Scrapbook Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Media Item 1: National Prayer Breakfast -->
+                <div class="news-clip p-6 rounded transform rotate-1">
+                    <div class="news-meta mb-2 flex justify-between">
+                        <span>Event Coverage</span>
+                        <span>March 2016</span>
+                    </div>
+                    <h3 class="news-headline text-2xl font-bold text-gray-900 leading-tight">Elevating International Voices at National Prayer Breakfast</h3>
+                    <img src="prayer-breakfast.jpg" alt="National Prayer Breakfast" class="h-48 w-full object-cover mb-4 rounded border border-gray-200" onerror="this.outerHTML='<div class=\'h-48 mb-4 w-full bg-gray-200 flex flex-col items-center justify-center text-gray-400 rounded border border-dashed border-gray-300\'><i class=\'fas fa-camera text-3xl mb-2\'></i><span class=\'text-xs\'>prayer-breakfast.jpg</span></div>'">
+                    <p class="text-gray-700 text-sm font-serif leading-relaxed line-clamp-4">
+                        Rev. Ji-Young Lee attended the 48th National Prayer Breakfast with international students she mentors through GCCA. Demonstrating human capital development in global missions, a mentored student from Ewha Womans University served as a scripture reader for the national event.
+                    </p>
+                </div>
+
+                <!-- Media Item 2: Canada Pro-Life -->
+                <div class="news-clip p-6 rounded transform -rotate-1">
+                    <div class="news-meta mb-2 flex justify-between">
+                        <span>Canada Pro-Life Journal</span>
+                        <span>Sept 2004</span>
+                    </div>
+                    <h3 class="news-headline text-2xl font-bold text-gray-900 leading-tight">Powerful Pro-life Monodrama Artist</h3>
+                    <p class="text-gray-700 text-sm font-serif leading-relaxed mb-4">
+                        <span class="float-left text-4xl font-bold text-gray-400 mr-2 mt-1">"</span>
+                        JiYoung Lee is a monodrama artist who uses mime and various props to portray the acute pain and psychological distress of a woman contemplating abortion... She cleverly shows the terror of the child who is attacked and robbed of its life.
+                    </p>
+                    <img src="prolife-article.jpg" alt="Pro-Life Article" class="h-auto w-full mt-4 rounded border border-gray-200" onerror="this.outerHTML='<div class=\'h-32 mt-4 w-full bg-gray-200 flex items-center justify-center text-gray-400 rounded border border-dashed border-gray-300\'><span class=\'text-xs\'>prolife-article.jpg</span></div>'">
+                </div>
+
+                <!-- Media Item 3: Vancouver Chosun Ilbo -->
+                <div class="news-clip p-6 rounded transform rotate-2">
+                    <div class="news-meta mb-2 flex justify-between">
+                        <span>Vancouver Chosun Ilbo</span>
+                        <span>April 2004</span>
+                    </div>
+                    <h3 class="news-headline text-2xl font-bold text-gray-900 leading-tight">"Your Life is Precious" – Performance for Drug Addicts</h3>
+                    <img src="vancouver-chosun.jpg" alt="Vancouver Chosun Ilbo" class="h-48 w-full object-cover object-top mb-4 rounded border border-gray-200" onerror="this.outerHTML='<div class=\'h-48 mb-4 w-full bg-gray-200 flex flex-col items-center justify-center text-gray-400 rounded border border-dashed border-gray-300\'><i class=\'fas fa-image text-3xl mb-2\'></i><span class=\'text-xs\'>vancouver-chosun.jpg</span></div>'">
+                    <p class="text-gray-700 text-sm font-serif leading-relaxed">
+                        Performing at the Potters Mission Community in East Hastings, known for its high concentration of marginalized individuals, Ji-Young Lee delivered a powerful pro-life monodrama.
+                    </p>
+                </div>
+
+                <!-- Media Item 4: Vancouver JoongAng Ilbo -->
+                <div class="news-clip p-6 rounded transform -rotate-2">
+                    <div class="news-meta mb-2 flex justify-between">
+                        <span>Vancouver JoongAng Ilbo</span>
+                        <span>April 2004</span>
+                    </div>
+                    <h3 class="news-headline text-2xl font-bold text-gray-900 leading-tight">Expressing Human Dignity and the Love of God</h3>
+                    <img src="vancouver-joongang.jpg" alt="Vancouver JoongAng Ilbo" class="h-48 w-full object-cover object-top mb-4 rounded border border-gray-200" onerror="this.outerHTML='<div class=\'h-48 mb-4 w-full bg-gray-200 flex flex-col items-center justify-center text-gray-400 rounded border border-dashed border-gray-300\'><i class=\'fas fa-photo-video text-3xl mb-2\'></i><span class=\'text-xs\'>vancouver-joongang.jpg</span></div>'">
+                    <p class="text-gray-700 text-sm font-serif leading-relaxed">
+                        In a 30-minute silent mime performance consisting of three acts, Lee portrayed the formation of life, the tragedy of abortion, and ultimate restoration without using a single spoken word.
+                    </p>
+                </div>
+
+                <!-- Media Item 5: Mongolia News -->
+                <div class="news-clip p-6 rounded transform rotate-1 lg:col-span-2">
+                    <div class="news-meta mb-2 flex justify-between">
+                        <span>Mongolian Local Press (Altai)</span>
+                        <span>Aug 2005</span>
+                    </div>
+                    <div class="md:flex gap-6">
+                        <div class="md:w-1/3 mb-4 md:mb-0">
+                            <img src="mongolia-news.jpg" alt="Mongolia Tour Press" class="h-full w-full object-cover rounded border border-gray-200" onerror="this.outerHTML='<div class=\'h-48 md:h-full w-full bg-gray-200 flex flex-col items-center justify-center text-gray-400 rounded border border-dashed border-gray-300\'><i class=\'fas fa-newspaper text-3xl mb-2\'></i><span class=\'text-xs\'>mongolia-news.jpg</span></div>'">
+                        </div>
+                        <div class="md:w-2/3">
+                            <h3 class="news-headline text-2xl font-bold text-gray-900 leading-tight">Monodrama Performer Ji-Young Lee's Mongolia Tour</h3>
+                            <p class="text-gray-700 text-sm font-serif leading-relaxed mb-2">
+                                Invited by Professor Lee Gyu-seok of Mongolia International University (MIU), Ji-Young Lee embarked on a month-long mission to address social issues through art.
+                            </p>
+                            <p class="text-gray-700 text-sm font-serif leading-relaxed">
+                                Her performances, including "Loss" (addressing the stigma of unwed mothers) and "The Dignity," were featured at major universities and local churches. The article highlighted her unique ability to present solutions to deep societal traumas through the beauty of movement and faith.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Media Item 6: Broadcast Highlights & Embedded YouTube -->
+                <div class="news-clip p-6 rounded bg-gray-800 text-white lg:col-span-3">
+                    <div class="news-meta mb-6 text-gray-400 border-b border-gray-600 pb-2 flex justify-between items-center">
+                        <span class="tracking-widest">Broadcast Highlights & Video Archives</span>
+                        <span>2003 - 2013</span>
+                    </div>
+                    
+                    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                        <!-- 왼쪽: 방송 이력 텍스트 -->
+                        <div class="lg:col-span-1">
+                            <h3 class="font-serif text-2xl font-bold text-accent mb-6 flex items-center">
+                                <i class="fas fa-tv mr-3 text-xl"></i> Television & Radio Validation
+                            </h3>
+                            <ul class="space-y-6 text-sm font-sans">
+                                <li class="flex flex-col bg-gray-700/30 p-4 rounded-lg border border-gray-700">
+                                    <strong class="text-white text-base mb-1">CTS (Christian TV)</strong>
+                                    <span class="text-gray-300">Featured in "People Focus" & "News Cafe" as a leading monodramatist.</span>
+                                </li>
+                                <li class="flex flex-col bg-gray-700/30 p-4 rounded-lg border border-gray-700">
+                                    <strong class="text-white text-base mb-1">CBS (Christian Broadcasting)</strong>
+                                    <span class="text-gray-300">"This is Life" and "People Changing the World" documentary features.</span>
+                                </li>
+                                <li class="flex flex-col bg-gray-700/30 p-4 rounded-lg border border-gray-700">
+                                    <strong class="text-white text-base mb-1">Toronto Radio Seoul</strong>
+                                    <span class="text-gray-300">Feature on the life and field ministry of a Christian artist.</span>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- 오른쪽: 임베디드 유튜브 영상 -->
+                        <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                            
+                            <!-- 1번 영상: CTS 인터뷰 -->
+                            <div class="w-full bg-black rounded-xl overflow-hidden shadow-2xl border border-gray-700 relative flex flex-col">
+                                <!-- 사용자가 제공한 Embed iframe 적용 (반응형을 위해 클래스 추가) -->
+                                <div class="relative w-full aspect-video">
+                                    <iframe 
+                                        src="https://www.youtube.com/embed/cy5F4bF5w8M?si=PfCAsVVOsVwIFcE2" 
+                                        title="YouTube video player" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        referrerpolicy="strict-origin-when-cross-origin" 
+                                        allowfullscreen
+                                        class="absolute top-0 left-0 w-full h-full">
+                                    </iframe>
+                                </div>
+                                <div class="p-3 bg-gray-900 border-t border-gray-700 mt-auto">
+                                    <p class="text-xs text-gray-400"><i class="fab fa-youtube text-red-500 mr-2"></i> CTS Interview Archive</p>
+                                </div>
+                            </div>
+                            
+                            <!-- 2번 영상: 퍼포먼스 다큐멘터리 -->
+                            <div class="w-full bg-black rounded-xl overflow-hidden shadow-2xl border border-gray-700 relative flex flex-col">
+                                <!-- 사용자가 제공한 Embed iframe 적용 (반응형을 위해 클래스 추가) -->
+                                <div class="relative w-full aspect-video">
+                                    <iframe 
+                                        src="https://www.youtube.com/embed/92IDZc9mgsY?si=Ud0hFI_feeSh7gl2" 
+                                        title="YouTube video player" 
+                                        frameborder="0" 
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                                        referrerpolicy="strict-origin-when-cross-origin" 
+                                        allowfullscreen
+                                        class="absolute top-0 left-0 w-full h-full">
+                                    </iframe>
+                                </div>
+                                <div class="p-3 bg-gray-900 border-t border-gray-700 mt-auto">
+                                    <p class="text-xs text-gray-400"><i class="fab fa-youtube text-red-500 mr-2"></i> Performance Documentary</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-primary text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-2xl font-bold serif-text mb-4">Ji-Young Lee</h2>
+            <p class="text-blue-200 max-w-2xl mx-auto mb-8 font-light text-sm">
+                "A leader who seamlessly integrates artistic excellence, theological depth, and proactive social compassion. Whether through the silence of a mime performance, the mentorship of international students, or the rigor of a doctoral seminar, she continues to advocate for human dignity."
+            </p>
+            <div class="flex justify-center space-x-4 mb-8">
+                <span class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition cursor-pointer"><i class="fas fa-envelope"></i></span>
+                <span class="w-10 h-10 rounded-full bg-white/10 flex items-center justify-center hover:bg-accent transition cursor-pointer"><i class="fas fa-link"></i></span>
+            </div>
+            <p class="text-gray-400 text-xs">
+                &copy; 2026 International Professional Portfolio. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
+
+
