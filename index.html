@@ -445,12 +445,11 @@
                             </ul>
                         </div>
                         
-                        <!-- 오른쪽: 임베디드 유튜브 영상 -->
-                        <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <!-- 오른쪽: 임베디드 유튜브 영상. items-start 속성 추가로 위아래 늘어남 방지 -->
+                        <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6 items-start">
                             
                             <!-- 1번 영상: CTS 인터뷰 -->
-                            <div class="w-full bg-black rounded-xl overflow-hidden shadow-2xl border border-gray-700 relative flex flex-col">
-                                <!-- 사용자가 제공한 Embed iframe 적용 (반응형을 위해 클래스 추가) -->
+                            <div class="w-full bg-black rounded-xl overflow-hidden shadow-2xl border border-gray-700 flex flex-col">
                                 <div class="relative w-full aspect-video">
                                     <iframe 
                                         src="https://www.youtube.com/embed/cy5F4bF5w8M?si=PfCAsVVOsVwIFcE2" 
@@ -462,14 +461,13 @@
                                         class="absolute top-0 left-0 w-full h-full">
                                     </iframe>
                                 </div>
-                                <div class="p-3 bg-gray-900 border-t border-gray-700 mt-auto">
+                                <div class="p-3 bg-gray-900 border-t border-gray-700">
                                     <p class="text-xs text-gray-400"><i class="fab fa-youtube text-red-500 mr-2"></i> CTS Interview Archive</p>
                                 </div>
                             </div>
                             
                             <!-- 2번 영상: 퍼포먼스 다큐멘터리 -->
-                            <div class="w-full bg-black rounded-xl overflow-hidden shadow-2xl border border-gray-700 relative flex flex-col">
-                                <!-- 사용자가 제공한 Embed iframe 적용 (반응형을 위해 클래스 추가) -->
+                            <div class="w-full bg-black rounded-xl overflow-hidden shadow-2xl border border-gray-700 flex flex-col">
                                 <div class="relative w-full aspect-video">
                                     <iframe 
                                         src="https://www.youtube.com/embed/92IDZc9mgsY?si=Ud0hFI_feeSh7gl2" 
@@ -481,7 +479,7 @@
                                         class="absolute top-0 left-0 w-full h-full">
                                     </iframe>
                                 </div>
-                                <div class="p-3 bg-gray-900 border-t border-gray-700 mt-auto">
+                                <div class="p-3 bg-gray-900 border-t border-gray-700">
                                     <p class="text-xs text-gray-400"><i class="fab fa-youtube text-red-500 mr-2"></i> Performance Documentary</p>
                                 </div>
                             </div>
